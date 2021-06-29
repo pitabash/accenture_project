@@ -1,0 +1,61 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:tnt="sap.tnt"
+    controllerName="accentureproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content >
+                        <tnt:ToolHeader height="60px" class="pack" >
+                            <tnt:content>
+                                <Image src="photos/acc_logo.PNG" height="40px"></Image>
+                                                        <IconTabHeader
+                                    id="iconTabHeader"
+                                    selectedKey="invalidKey"
+                                    select=".onSelectTab"
+                                    backgroundDesign="Transparent"
+                                    mode="Inline">
+                                    <layoutData>
+                                        <OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true" />
+                                    </layoutData>
+                                    <items>
+                                        <IconTabFilter text="Insights" />
+                                        <IconTabFilter text="Services" />
+                                        <IconTabFilter text="Industries" />
+                                        <IconTabFilter text="Careers" />
+                                    </items>
+                                </IconTabHeader>
+
+                                
+
+                                <Button icon="sap-icon://search" type="Transparent">
+                                    <layoutData>
+                                        <OverflowToolbarLayoutData priority="NeverOverflow" />
+                                    </layoutData>
+                                </Button>
+                                <Button text="SIGN IN" type="Transparent">
+                                    <layoutData>
+                                        <OverflowToolbarLayoutData priority="NeverOverflow" />
+                                    </layoutData>
+                                </Button>
+                                <MenuButton icon="sap-icon://hint" type="Transparent">
+                                    <layoutData>
+                                        <OverflowToolbarLayoutData priority="NeverOverflow" />
+                                    </layoutData>
+                                    <Menu>
+                                        <MenuItem text="Edit" icon="sap-icon://edit" />
+                                        <MenuItem text="Save" icon="sap-icon://save" />
+                                    </Menu>
+                                </MenuButton>
+
+                            </tnt:content>
+                        </tnt:ToolHeader>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
